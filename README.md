@@ -19,9 +19,9 @@ __Make sure the following 3 resource files are in the same directory:__
 __controls__
 | Key / Action       | Function / 描述                   |
 |--------------------|------------------------------------|
-| `← ↑ → ↓`          | Hit notes in the corresponding lane / 击打对应方向的节奏块 |
-| `Enter`            | Start / Confirm / Proceed / 开始游戏、确认或继续 |
-| `↑ / ↓`            | Change note falling speed / 改变节奏速度 |
-| `Esc` or `⏎`       | Return to speed selection screen / 返回速度选择界面 |
-| Mouse Left Click   | Click buttons on screen / 点击界面按钮执行操作 |
+| `← ↑ → ↓`          | Hit notes in the corresponding lane |
+| `Enter`            | Start / Confirm / Proceed  |
+| `↑ / ↓`            | Change note falling speed  |
+| `Esc` or `⏎`       | Return to speed selection screen |
+| Mouse Left Click   | Click buttons on screen |
 
