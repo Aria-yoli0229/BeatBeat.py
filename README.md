@@ -2,6 +2,27 @@
 
 BeatBeat is a simple rhythm game made with Python and Pygame. Players could try to achieve the highest comboo by pressing the correct arrow keys as the notes fall down to the hit line!
 
->dads
->asdasd
->asdasd
+__features__
+- multiple game states: Start -> Select Speed Level -> Play -> End
+- Diffirent speed level could be chosen
+- Sound effects with .wav file when you hit the note successfully
+- Fonts with .ttf files for UI styling
+- Judgement System: Perfect, Good, Miss
+- Score system and Combo system
+- Game ends after a fixed numeber(default 10 and if you want to play for longer time, you could change the value of max_note_num in the programme) of notes are generated
+
+__Make sure the following 3 resource files are in the same directory:__
+- duang.wav
+- WDXLLubrifontTC-Regular.ttf
+- DelaGothicOne-Regular.ttf
+
+__controls__
+| 123 | 2341 |
+——————————————
+|ruiqi|123|
+Key / Action	Function
+← ↑ → ↓	Hit notes in the correct lane
+Enter	Start / Confirm / Play
+Up / Down	Adjust speed level
+Esc or ⏎	Return to speed selection
+Mouse Click	Start / Change speed / Play
