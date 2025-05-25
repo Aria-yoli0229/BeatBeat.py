@@ -21,7 +21,7 @@ color3 = (255, 215, 0) # Gold
 color4 = (142, 229, 238) # CadetBlue2
 color5 = (255, 193, 193) # 	RosyBrown1
 
-max_note_num = 100 # The game will over after max_note_num notes be created
+max_note_num = 10 # The game will over after max_note_num notes be created
 
 # Set some initial value
 hit_line = 500
@@ -221,7 +221,7 @@ while True:
     # playing screen
     elif game_status == 'playing':
         if random.random() < 0.02 and last_note_num > 0: # each loop has 2% chance to create a note
-            max_note_num -= 1
+            last_note_num -= 1
             column_id = random.choice([0, 1, 2, 3])
             notes[column_id].append(note(column_x[column_id], speed))
 
