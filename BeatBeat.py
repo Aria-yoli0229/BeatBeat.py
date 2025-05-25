@@ -19,9 +19,9 @@ color1 = (255, 250, 205) # LemonChiffon
 color2 = (255, 250, 250) # Snow
 color3 = (255, 215, 0) # Gold
 color4 = (142, 229, 238) # CadetBlue2
-color5 = (255, 193, 193) # 	RosyBrown1
+color5 = (255, 193, 193) # RosyBrown1
 
-max_note_num = 10 # The game will over after max_note_num notes be created
+max_note_num = 20 # The game will over after max_note_num notes be created
 
 # Set some initial value
 hit_line = 500
@@ -149,7 +149,7 @@ miss_end_image = end_font.render(f'MISS: {num_miss:03d}', True, color5)
 miss_end_rect = miss_end_image.get_rect()
 miss_end_rect.centerx = 200
 miss_end_rect.centery = 250
-max_combo_image = end_font.render(f'MAX_COMBO: {max_combo:03d}', True, color2)
+max_combo_image = end_font.render(f'MAX COMBO: {max_combo:03d}', True, color2)
 max_combo_rect = max_combo_image.get_rect()
 max_combo_rect.centerx = 200
 max_combo_rect.centery = 300
@@ -260,6 +260,8 @@ while True:
                             pygame.draw.rect(screen, color3, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 100
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                         elif abs(n.y - hit_line) < 20:
@@ -271,6 +273,8 @@ while True:
                             pygame.draw.rect(screen, color4, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 50
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                 elif event.key == pygame.K_UP and notes[1]:
@@ -284,6 +288,8 @@ while True:
                             pygame.draw.rect(screen, color3, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 100
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                         elif abs(n.y - hit_line) < 20:
@@ -295,6 +301,8 @@ while True:
                             pygame.draw.rect(screen, color4, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 50
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                 elif event.key == pygame.K_RIGHT and notes[2]:
@@ -308,6 +316,8 @@ while True:
                             pygame.draw.rect(screen, color3, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 100
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                         elif abs(n.y - hit_line) < 20:
@@ -319,6 +329,8 @@ while True:
                             pygame.draw.rect(screen, color4, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 50
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                 elif event.key == pygame.K_DOWN and notes[3]:
@@ -332,6 +344,8 @@ while True:
                             pygame.draw.rect(screen, color3, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 100
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                         elif abs(n.y - hit_line) < 20:
@@ -343,6 +357,8 @@ while True:
                             pygame.draw.rect(screen, color4, (n.x - 40, n.y - 20, 80, 40), 2)
                             score += 50
                             combo += 1
+                            if combo > max_combo:
+                                max_combo = combo
                             sound.play()
                             break
                 elif event.key == pygame.K_ESCAPE:
@@ -377,8 +393,6 @@ while True:
                     stay_time = 20
                     note_list.remove(n)
                     num_miss += 1
-                    if combo > max_combo:
-                        max_combo = combo
                     combo = 0
                     break
 
@@ -403,7 +417,7 @@ while True:
         screen.blit(good_end_image, good_end_rect)
         miss_end_image = end_font.render(f'MISS: {num_miss:03d}', True, color5)
         screen.blit(miss_end_image, miss_end_rect)
-        max_combo_image = end_font.render(f'MAX_COMBO: {max_combo:03d}', True, color2)
+        max_combo_image = end_font.render(f'MAX COMBO: {max_combo:03d}', True, color2)
         screen.blit(max_combo_image, max_combo_rect)
         score_end_image = end_font.render(f'SCORE: {score:05d}', True, color2)
         screen.blit(score_end_image, score_end_rect)
