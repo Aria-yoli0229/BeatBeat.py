@@ -17,12 +17,11 @@ __Make sure the following 3 resource files are in the same directory:__
 - DelaGothicOne-Regular.ttf
 
 __controls__
-| 123 | 2341 |
-——————————————
-|ruiqi|123|
-Key / Action	Function
-← ↑ → ↓	Hit notes in the correct lane
-Enter	Start / Confirm / Play
-Up / Down	Adjust speed level
-Esc or ⏎	Return to speed selection
-Mouse Click	Start / Change speed / Play
+| Key / Action       | Function / 描述                   |
+|--------------------|------------------------------------|
+| `← ↑ → ↓`          | Hit notes in the corresponding lane / 击打对应方向的节奏块 |
+| `Enter`            | Start / Confirm / Proceed / 开始游戏、确认或继续 |
+| `↑ / ↓`            | Change note falling speed / 改变节奏速度 |
+| `Esc` or `⏎`       | Return to speed selection screen / 返回速度选择界面 |
+| Mouse Left Click   | Click buttons on screen / 点击界面按钮执行操作 |
+
