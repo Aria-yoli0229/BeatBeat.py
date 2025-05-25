@@ -9,7 +9,7 @@ __features__
 - Fonts with .ttf files for UI styling
 - Judgement System: Perfect, Good, Miss
 - Score system and Combo system
-- Game ends after a fixed numeber(default 10 and if you want to play for longer time, you could change the value of max_note_num in the programme) of notes are generated
+- Game ends after a fixed numeber(default 20 and if you want to play for longer time, you could change the value of max_note_num in the programme) of notes are generated
 
 __Make sure the following 3 resource files are in the same directory:__
 - duang.wav
