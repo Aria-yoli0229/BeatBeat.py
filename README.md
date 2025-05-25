@@ -22,6 +22,5 @@ __controls__
 | `← ↑ → ↓`          | Hit notes in the corresponding lane |
 | `Enter`            | Start / Confirm / Proceed  |
 | `↑ / ↓`            | Change note falling speed  |
-| `Esc` or `⏎`       | Return to speed selection screen |
+| `Esc`       | Return to speed selection screen |
 | Mouse Left Click   | Click buttons on screen |
-
